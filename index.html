@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Team Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="F1.png" alt="Formula 1 Logo" class="f1-logo">
+        </header>
+        <h1>What's Your Ideal F1 Team?</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <label for="q1">What's your top priority when watching a race?</label>
+                <select id="q1">
+                    <option value="">Select Answer</option>
+                    <option value="speed">Speed! I want to see them fly!</option>
+                    <option value="strategy">Strategy. I love the tactical battle.</option>
+                    <option value="consistency">Consistency. I like to see a steady performer.</option>
+                    <option value="underdog">Under-dog stories. I cheer for the ones who fight hard.</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q2">How do you feel about rivalries in F1?</label>
+                <select id="q2">
+                    <option value="">Select Answer</option>
+                    <option value="love">Love them! A bit of drama makes it more exciting.</option>
+                    <option value="friendly">I like a bit of friendly competition, but no need for drama.</option>
+                    <option value="no-drama">I just want to watch great racing, no drama needed!</option>
+                    <option value="respectful">Rivalries are fine as long as they're respectful.</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q3">What's your ideal F1 car like?</label>
+                <select id="q3">
+                    <option value="">Select Answer</option>
+                    <option value="powerful">Powerful and fast, like a rocket!</option>
+                    <option value="sleek">Sleek and stylish, with amazing design.</option>
+                    <option value="solid">Solid and reliable, always there when it counts.</option>
+                    <option value="bold">Bold and innovative, always pushing the boundaries.</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q4">How do you feel about team history?</label>
+                <select id="q4">
+                    <option value="">Select Answer</option>
+                    <option value="legendary">I love a legendary team with a rich history!</option>
+                    <option value="underdog">I'm all about the underdog with something to prove.</option>
+                    <option value="fresh">A strong tradition is cool, but I like fresh challenges.</option>
+                    <option value="doesnt-matter">Doesn't matter much to me as long as they perform!</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q5">Which of these drivers would you support?</label>
+                <select id="q5">
+                    <option value="">Select Answer</option>
+                    <option value="championship">The one who's always chasing the championship.</option>
+                    <option value="underdog">The underdog who surprises everyone.</option>
+                    <option value="strategic">The calm, strategic thinker.</option>
+                    <option value="fearless">The aggressive, fearless racer.</option>
+                </select>
+            </div>
+            <button type="button" onclick="findTeam()">Find Your F1 Team</button>
+            <div class="creator-info">
+                Made by <a href="https://www.linkedin.com/in/oussama-lembarki" target="_blank">Oussama</a> with <3
+            </div>
+            <div id="result"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

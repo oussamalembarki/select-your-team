@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+}
+
+.container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.f1-logo {
+    max-width: 250px;
+    max-height: 120px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.question {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid #ddd;
+    border-radius: 6px;
+    appearance: none;
+    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M1 4l5 5 5-5' fill='none' stroke='%23999' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right 10px center;
+    background-size: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #E10600;  
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #C50600;
+}
+
+.creator-info {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+.creator-info a {
+    color: #E10600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.creator-info a:hover {
+    text-decoration: underline;
+    color: #C50600;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .f1-logo {
+        max-width: 200px;
+    }
+}
